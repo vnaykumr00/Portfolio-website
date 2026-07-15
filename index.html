@@ -1,675 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Vinay Kumar Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinay Kumar | Java Full Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Vinay Kumar, a Java Full Stack Developer specializing in microservices, real-time systems, and cloud-deployed platforms.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<body class="dark-theme">
+  <!-- Particle canvas background -->
+  <canvas id="particle-canvas"></canvas>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+  <!-- Animated background blobs -->
+  <div class="blob-bg blob-1"></div>
+  <div class="blob-bg blob-2"></div>
+  <div class="blob-bg blob-3"></div>
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-    <link rel="stylesheet" href="css/aos.css">
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">VK<span>.</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content reveal fade-left">
+        <span class="greeting">Hi, I'm </span>
+        <h1 class="name glitch" data-text="Vinay Kumar">Vinay Kumar</h1>
+        <div class="typing-wrapper">
+          <span class="typing-prefix">I'm a </span>
+          <span class="typing-text" id="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="summary">I ship end-to-end systems — from system design to production. Specializing in microservices,
+          real-time systems, and cloud-deployed platforms.</p>
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+        <div class="cta-group">
+          <a href="https://drive.google.com/file/d/1D2bRsYvS3---JJ1cjL5ppvWXp48T833A/view?usp=drivesdk" target="_blank"
+            class="btn btn-primary magnetic">
+            <span>Download Resume</span> <i class="fas fa-download"></i>
+          </a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/vnaykumr00/" target="_blank" aria-label="LinkedIn" class="magnetic"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/vnaykumr00" target="_blank" aria-label="GitHub" class="magnetic"><i
+                class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/RockUnique/" target="_blank" aria-label="LeetCode" class="magnetic"><i
+                class="fas fa-code"></i></a>
+            <a href="https://twitter.com/vnay__kumar" target="_blank" aria-label="Twitter" class="magnetic"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mr_vnay/" target="_blank" aria-label="Instagram" class="magnetic"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-container reveal fade-right">
+        <div class="glass-card hero-stats floating-card">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-text">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-text">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-text">DSA Problems</span>
+          </div>
+        </div>
+        <div class="profile-image-wrapper tilt-card">
+          <img src="images/vinay_programmer.png" alt="Vinay Kumar" class="profile-img"
+            onerror="this.src='https://ui-avatars.com/api/?name=Vinay+Kumar&size=512&background=0D8ABC&color=fff'">
+          <div class="image-glow"></div>
+        </div>
+      </div>
+    </section>
 
-    <style>
-      /*======================================
-//--//-->   ABOUT
-======================================*/
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-header reveal fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="line"></div>
+      </div>
 
-      .about-mf .box-shadow-full {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
+      <div class="about-grid">
+        <div class="glass-card about-card reveal fade-left">
+          <p>I am a Full Stack Developer (Java, Spring Boot, React.js, MySQL/PL-SQL) who builds and scales platforms.
+            I've consistently optimized systems, cutting latency and operational overhead by 20–40%.</p>
+          <p>Passionate about architecting event-driven pipelines, improving real-time updates, and deploying resilient
+            services using Docker and Kubernetes.</p>
+          <ul class="quick-info">
+            <li><i class="fas fa-map-marker-alt"></i> Panipat, Haryana, India</li>
+            <li><i class="fas fa-envelope"></i> vnay.kumr.00@gmail.com</li>
+            <li><i class="fas fa-phone"></i> +91 8397876777</li>
+          </ul>
+        </div>
+        <div class="about-highlights reveal fade-right">
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fas fa-rocket"></i></div>
+            <h4>Full Stack</h4>
+            <p>End-to-end from UI to microservices</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fas fa-cloud"></i></div>
+            <h4>Cloud Native</h4>
+            <p>AWS, Docker, Kubernetes deployments</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fas fa-bolt"></i></div>
+            <h4>Performance</h4>
+            <p>20-40% latency reduction specialist</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fas fa-cogs"></i></div>
+            <h4>System Design</h4>
+            <p>Event-driven, scalable architectures</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      .about-mf .about-img {
-        margin-bottom: 2rem;
-      }
+    <!-- Skills Section - Attention Grabbing -->
+    <section id="skills" class="section skills-section">
+      <div class="section-header reveal fade-up">
+        <h2 class="section-title">Tech Arsenal</h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Technologies I wield to build production-grade systems</p>
+      </div>
 
-      .about-mf .about-img img {
-        margin-left: 10px;
-      }
+      <!-- Infinite scrolling skill marquee -->
+      <div class="skill-marquee-container reveal fade-up">
+        <div class="skill-marquee">
+          <div class="marquee-track">
+            <div class="skill-icon-card"><i class="fab fa-java"></i><span>Java</span></div>
+            <div class="skill-icon-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-icon-card"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-icon-card"><i class="fab fa-react"></i><span>React.js</span></div>
+            <div class="skill-icon-card"><i class="fab fa-angular"></i><span>Angular</span></div>
+            <div class="skill-icon-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="skill-icon-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+            <div class="skill-icon-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+            <div class="skill-icon-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+            <div class="skill-icon-card"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
+            <div class="skill-icon-card"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+            <div class="skill-icon-card"><i class="fas fa-stream"></i><span>Kafka</span></div>
+            <!-- duplicate for seamless loop -->
+            <div class="skill-icon-card"><i class="fab fa-java"></i><span>Java</span></div>
+            <div class="skill-icon-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-icon-card"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-icon-card"><i class="fab fa-react"></i><span>React.js</span></div>
+            <div class="skill-icon-card"><i class="fab fa-angular"></i><span>Angular</span></div>
+            <div class="skill-icon-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="skill-icon-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+            <div class="skill-icon-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+            <div class="skill-icon-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+            <div class="skill-icon-card"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
+            <div class="skill-icon-card"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+            <div class="skill-icon-card"><i class="fas fa-stream"></i><span>Kafka</span></div>
+          </div>
+        </div>
+      </div>
 
-      .skill-mf .progress {
-        /* background-color: #cde1f8; */
-        margin: 0.5rem 0 1.2rem;
-        border-radius: 0;
-        height: 0.7rem;
-      }
+      <!-- Detailed skills with animated orbit -->
+      <div class="skills-detail-grid">
+        <div class="skill-category glass-card reveal fade-up" style="--delay: 0.1s">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span class="skill-name">Java</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">JavaScript</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Python</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">C++ / C#</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Kotlin</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal fade-up" style="--delay: 0.2s">
+          <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend & Frameworks</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span class="skill-name">Spring Boot</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="92"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Microservices</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Hibernate / JPA</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">REST APIs</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">.NET Core</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal fade-up" style="--delay: 0.3s">
+          <div class="skill-cat-icon"><i class="fas fa-palette"></i></div>
+          <h3>Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span class="skill-name">React.js</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Angular</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="72"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">HTML5 / CSS3</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal fade-up" style="--delay: 0.4s">
+          <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span class="skill-name">MySQL / PL-SQL</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">PostgreSQL</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">MongoDB</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="78"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Oracle</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="72"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal fade-up" style="--delay: 0.5s">
+          <div class="skill-cat-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span class="skill-name">AWS (EC2, S3)</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Docker</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Kubernetes</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">Apache Kafka</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="78"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span class="skill-name">CI/CD</span>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      .skill-mf .progress .progress-bar {
-        height: 0.7rem;
-        background-color: #ffbd39;
-      }
+    <!-- System Design Section -->
+    <section id="system-design" class="section">
+      <div class="section-header reveal fade-up">
+        <h2 class="section-title">System Design</h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Architecture patterns I apply to build scalable, resilient systems</p>
+      </div>
 
-      /* Animation styles */
-      #typing-animation {
-        position: relative;
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(20, end) infinite;
-      }
+      <div class="sd-grid">
+        <div class="glass-card sd-card reveal fade-up" style="--delay: 0.1s">
+          <div class="sd-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Microservices Architecture</h3>
+          <p>Decomposing monoliths into independently deployable services. At TCI Group, I broke a monolith into Spring
+            Boot microservices with PostgreSQL, enabling independent scaling per service.</p>
+          <div class="sd-tags">
+            <span>Spring Boot</span><span>API Gateway</span><span>Service Discovery</span>
+          </div>
+        </div>
 
-      #typing-animation:before {
-        content: "";
-        /* position: absolute; */
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #ccc;
-        animation: typing-cursor 0.5s ease-in-out infinite;
-      }
+        <div class="glass-card sd-card reveal fade-up" style="--delay: 0.2s">
+          <div class="sd-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Event-Driven Systems</h3>
+          <p>Building asynchronous, loosely coupled pipelines with message brokers. Currently architecting OrderFlow
+            with Kafka for decoupled order processing across services.</p>
+          <div class="sd-tags">
+            <span>Apache Kafka</span><span>Pub/Sub</span><span>Async Processing</span>
+          </div>
+        </div>
 
-      @keyframes typing {
-        from {
-          width: 0;
-        }
+        <div class="glass-card sd-card reveal fade-up" style="--delay: 0.3s">
+          <div class="sd-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Resilience Patterns</h3>
+          <p>Circuit breakers, retries, and fallbacks to keep services running under failure. Implementing Resilience4j
+            patterns in OrderFlow for fault-tolerant microservices.</p>
+          <div class="sd-tags">
+            <span>Circuit Breaker</span><span>Retry</span><span>Resilience4j</span>
+          </div>
+        </div>
 
-        to {
-          width: 100%;
-        }
-      }
+        <div class="glass-card sd-card reveal fade-up" style="--delay: 0.4s">
+          <div class="sd-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h3>Caching & Performance</h3>
+          <p>Strategic caching layers to reduce latency and database load. Tuned SQL queries + Redis caching at TCI
+            Group, lifting backend performance by 20%.</p>
+          <div class="sd-tags">
+            <span>Redis</span><span>Query Optimization</span><span>CDN</span>
+          </div>
+        </div>
 
-      @keyframes typing-cursor {
-        from {
-          width: 5px;
-        }
+        <div class="glass-card sd-card reveal fade-up" style="--delay: 0.5s">
+          <div class="sd-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3>Real-Time Systems</h3>
+          <p>WebSocket-based live data streaming for instant user feedback. Built Zekoni's live location tracking with
+            Socket.io and smart throttling for performance.</p>
+          <div class="sd-tags">
+            <span>WebSockets</span><span>Socket.io</span><span>Supabase Realtime</span>
+          </div>
+        </div>
 
-        to {
-          width: 0;
-        }
-      }
+        <div class="glass-card sd-card reveal fade-up" style="--delay: 0.6s">
+          <div class="sd-icon"><i class="fas fa-docker"></i></div>
+          <h3>Containerization & CI/CD</h3>
+          <p>Docker + Kubernetes for consistent deployments and auto-scaling. Set up CI/CD pipelines on AWS EC2/S3 to
+            maintain 99.9% uptime at TCI Group.</p>
+          <div class="sd-tags">
+            <span>Docker</span><span>Kubernetes</span><span>AWS CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      /* project image zoom effect */
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="section-header reveal fade-up">
+        <h2 class="section-title">Experience</h2>
+        <div class="line"></div>
+      </div>
 
-      .zoom-effect {
-        overflow: hidden;
-        transition: transform 0.3s ease-out;
-      }
+      <div class="timeline">
+        <div class="timeline-item reveal fade-left">
+          <div class="timeline-dot pulse-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-header">
+              <h3>Full Stack Developer</h3>
+              <span class="date">Aug '24 – Present</span>
+            </div>
+            <h4 class="company">TCI Group (Transport Corporation of India Limited) | Gurugram, India</h4>
+            <ul class="achievements">
+              <li>Led development of a Yard Management System (YMS) that digitized yard and container operations,
+                replacing manual tracking with a single source of truth.</li>
+              <li>Designed a slot-allocation algorithm in Spring Boot to optimize yard-space utilization, cutting truck
+                wait time by ~28%.</li>
+              <li>Decomposed the platform into a microservices architecture (Spring Boot, PostgreSQL) for independent
+                scaling, paired with React.js dashboards featuring 3D yard visualization.</li>
+              <li>Tuned SQL queries and introduced caching to lift backend performance by 20%, and set up CI/CD on AWS
+                EC2/S3 to sustain 99.9% uptime.</li>
+            </ul>
+          </div>
+        </div>
 
-      .zoom-effect:hover {
-        transform: scale(1.1);
-      }
+        <div class="timeline-item reveal fade-right">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-header">
+              <h3>Full Stack Intern</h3>
+              <span class="date">Mar '22 – Jun '22</span>
+            </div>
+            <h4 class="company">Book4u | Karnal, India</h4>
+            <ul class="achievements">
+              <li>Built a full-stack MERN platform (MongoDB, Express.js, React.js, Node.js) for book management and user
+                transactions.</li>
+              <li>Implemented JWT-based authentication and secured API/session handling for user login.</li>
+              <li>Profiled and optimized MongoDB queries, improving API response time by ~25%.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      @media screen and (orientation: portrait) {
-        body {
-          margin-left: 5%;
-          margin-right: 5%;
-        }
+    <!-- Projects Section - With GitHub repos -->
+    <section id="projects" class="section">
+      <div class="section-header reveal fade-up">
+        <h2 class="section-title">Projects</h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Featured work from my <a href="https://github.com/vnaykumr00" target="_blank"
+            class="accent-link">GitHub <i class="fab fa-github"></i></a></p>
+      </div>
 
-        .order-md-last {
-          visibility: hidden;
-        }
+      <div class="projects-grid">
+        <!-- Zekoni -->
+        <div class="glass-card project-card reveal fade-up" style="--delay: 0.1s">
+          <div class="project-icon"><i class="fas fa-utensils"></i></div>
+          <div class="project-header">
+            <h3>Zekoni</h3>
+            <span class="project-date">Dec '25 – Jan '26</span>
+          </div>
+          <p class="project-desc">Two-sided marketplace connecting chefs and customers with live location tracking and
+            real-time payments.</p>
+          <div class="tech-stack">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Supabase</span><span>Socket.io</span><span>Razorpay</span>
+          </div>
+          <ul class="project-details">
+            <li>Socket.io + Leaflet for live location tracking with smart throttling</li>
+            <li>Razorpay payments pipeline — webhooks, automated lifecycle, real-time receipts</li>
+            <li>Supabase Realtime subscriptions cutting network overhead ~40%</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/vnaykumr00/ChefOnDemand-Back" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> Backend</a>
+          </div>
+        </div>
 
-        .about-img img {
-          content: url("images/vinay.png");
-        }
-      }
-    </style>
+        <!-- SyntaxIQ -->
+        <div class="glass-card project-card reveal fade-up" style="--delay: 0.2s">
+          <div class="project-icon"><i class="fas fa-brain"></i></div>
+          <div class="project-header">
+            <h3>SyntaxIQ</h3>
+            <span class="project-date">Present</span>
+          </div>
+          <p class="project-desc">AI-powered code review platform using OpenAI API for real-time code quality analysis
+            and reporting.</p>
+          <div class="tech-stack">
+            <span>React.js</span><span>Spring Boot</span><span>PostgreSQL</span><span>OpenAI API</span>
+          </div>
+          <ul class="project-details">
+            <li>OpenAI API orchestration for real-time code quality analysis</li>
+            <li>React.js analysis & reporting frontend with session auth</li>
+          </ul>
+        </div>
 
-  </head>
+        <!-- OrderFlow -->
+        <div class="glass-card project-card reveal fade-up" style="--delay: 0.3s">
+          <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="project-header">
+            <h3>OrderFlow</h3>
+            <span class="project-status">In Progress</span>
+          </div>
+          <p class="project-desc">Event-driven order-processing platform with independent microservices communicating
+            via Kafka.</p>
+          <div class="tech-stack">
+            <span>Spring
+              Boot</span><span>Kafka</span><span>Docker</span><span>Kubernetes</span><span>Redis</span><span>Resilience4j</span>
+          </div>
+          <ul class="project-details">
+            <li>Resilience patterns: circuit breakers, retries via Resilience4j</li>
+            <li>Containerized services with Docker for Kubernetes deployment</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/vnaykumr00/OrderFlow" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
 
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+        <!-- UniEats -->
+        <div class="glass-card project-card reveal fade-up" style="--delay: 0.4s">
+          <div class="project-icon"><i class="fas fa-hamburger"></i></div>
+          <div class="project-header">
+            <h3>UniEats</h3>
+            <span class="project-date">May '24</span>
+          </div>
+          <p class="project-desc">University campus food ordering app with a separate admin panel for restaurant
+            management.</p>
+          <div class="tech-stack">
+            <span>Kotlin</span><span>Android</span><span>Firebase</span>
+          </div>
+          <ul class="project-details">
+            <li>Customer-facing ordering app with real-time status tracking</li>
+            <li>Separate Admin panel for menu & order management</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/vnaykumr00/UniEats" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> App</a>
+            <a href="https://github.com/vnaykumr00/UniEatsAdmin" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> Admin</a>
+          </div>
+        </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Vinay Kumar</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span>
-          Menu
-        </button>
+        <!-- CrackYourPlacement -->
+        <div class="glass-card project-card reveal fade-up" style="--delay: 0.5s">
+          <div class="project-icon"><i class="fas fa-trophy"></i></div>
+          <div class="project-header">
+            <h3>CrackYourPlacement</h3>
+            <span class="project-date">Jul '24</span>
+          </div>
+          <p class="project-desc">45-day DSA Challenge repository — structured problem-solving journey for placement
+            preparation.</p>
+          <div class="tech-stack">
+            <span>DSA</span><span>Java</span><span>Problem Solving</span>
+          </div>
+          <ul class="project-details">
+            <li>Organized solutions for #CrackYourInternship challenge</li>
+            <li>Covers arrays, trees, graphs, DP and more</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/vnaykumr00/CrackYourPlacement" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item">
-              <a href="#home-section" class="nav-link">
-                <span>Home</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link">
-                <span>About</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#resume-section" class="nav-link">
-                <span>Resume</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact-section" class="nav-link">
-                <span>Contact</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#send-message" class="nav-link">
-                <span>Message me</span></a>
-            </li>
+        <!-- PrinterFix -->
+        <div class="glass-card project-card reveal fade-up" style="--delay: 0.6s">
+          <div class="project-icon"><i class="fas fa-print"></i></div>
+          <div class="project-header">
+            <h3>PrinterFix</h3>
+            <span class="project-date">Jun '26</span>
+          </div>
+          <p class="project-desc">Desktop utility tool built in C# to diagnose and fix common printer issues
+            automatically.</p>
+          <div class="tech-stack">
+            <span>C#</span><span>.NET</span><span>Windows</span>
+          </div>
+          <ul class="project-details">
+            <li>Automated diagnostics for common printer failures</li>
+            <li>1 fork from the community</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/vnaykumr00/PrinterFix" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="section-header reveal fade-up">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="education-grid">
+        <div class="glass-card edu-card reveal fade-up" style="--delay: 0.1s">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Master of Computer Applications</h3>
+          <h4 class="inst">Chandigarh University, Mohali</h4>
+          <div class="edu-meta">
+            <span class="date">Nov '22 – Jun '24</span>
+            <span class="grade">GPA: 7.63</span>
+          </div>
+        </div>
+
+        <div class="glass-card edu-card reveal fade-up" style="--delay: 0.2s">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Bachelor of Computer Applications</h3>
+          <h4 class="inst">Kurukshetra University, Haryana</h4>
+          <div class="edu-meta">
+            <span class="date">Aug '19 – Sep '22</span>
+            <span class="grade">GPA: 70.67</span>
+          </div>
+        </div>
+
+        <div class="glass-card edu-card certs-card reveal fade-up" style="--delay: 0.3s">
+          <div class="edu-icon"><i class="fas fa-award"></i></div>
+          <h3>Certifications</h3>
+          <ul class="cert-list">
+            <li><i class="fas fa-certificate"></i> Blockchain and its Applications — NPTEL (Jul '23)</li>
+            <li><i class="fas fa-certificate"></i> React & Node.js — Infosys Springboard (Dec '22)</li>
           </ul>
         </div>
       </div>
-    </nav>
-    <section id="home-section" class="hero">
-      <div class="home-slider  owl-carousel">
-        <div class="slider-item ">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/vinay.PNG);">
-                <div class="overlay"></div>
-              </div>
-              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm
-                    <span>Vinay Kumar</span></h1>
+    </section>
 
-                  <!-- Element to contain animated typing -->
-                  <span id="typing-animation"></span>
-
-                  <script>
-                    // Initialize the typing animation
-                    const typingAnimationElement = document.getElementById('typing-animation');
-
-                    // Create an array of typing text
-                    const typingTexts = ['Software Developer     ', 'Data Structure and Algorithm     ', 'Problem Solving    '];
-
-                    // Create a function to display the typing animation for a given text
-                    function playTypingAnimation(text) {
-                      // Loop through each character and add it to the element
-                      for (let i = 0; i < text.length; i++) {
-                        setTimeout(() => {
-                          typingAnimationElement.textContent += text[i];
-                        }, i * 100); // Decreased delay to speed up the typing animation
-                      }
-
-                      // Once the animation is complete, reset the text and start over
-                      setTimeout(() => {
-                        typingAnimationElement.textContent = '';
-                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                      }, text.length * 100); // Adjusted delay accordingly
-                    }
-
-                    // Start the typing animation loop
-                    playTypingAnimation(typingTexts[0]);
-                  </script><br><br>
-                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-                  <!-- <br> -->
-                  <p>
-                    <a href="https://leetcode.com/RockUnique/" class="btn btn-primary py-3 px-4">My Leetcode</a>
-                    <a href="https://www.linkedin.com/in/vnaykumr00/" class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
-                  </p>
-                </div>
-              </div>
-            </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header reveal fade-up">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="line"></div>
+      </div>
+      <div class="contact-container">
+        <div class="glass-card contact-info reveal fade-left">
+          <h3>Let's Connect</h3>
+          <p>I'm always open to discussing new opportunities, creative ideas, or opportunities to be part of your
+            visions.</p>
+          <div class="contact-links">
+            <a href="mailto:vnay.kumr.00@gmail.com" class="contact-link"><i class="fas fa-envelope"></i>
+              vnay.kumr.00@gmail.com</a>
+            <a href="tel:+918397876777" class="contact-link"><i class="fas fa-phone"></i> +91 8397876777</a>
+            <a href="https://www.linkedin.com/in/vnaykumr00/" target="_blank" class="contact-link"><i
+                class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/vnaykumr00" target="_blank" class="contact-link"><i class="fab fa-github"></i>
+              GitHub</a>
           </div>
+        </div>
+
+        <div class="glass-card contact-form reveal fade-right">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6e71dfa1-6bf9-44a3-95bb-212e2d07bda8">
+            <div class="form-group">
+              <input type="text" name="fullname" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
         </div>
       </div>
     </section>
+  </main>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row">
-          <div class="row d-flex align-items-stretch">
-            <!-- <div class="row d-flex"> -->
-            <div class="col-md-6 col-lg-5 d-flex">
-              <div class="img-about img d-flex align-items-stretch">
-                <div class="overlay">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <!-- Details next to profile image -->
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p>
-                          <span class="title-s">Name:
-                          </span>
-                          <span>Vinay Kumar</span></p>
-                        <p>
-                          <span class="title-s">Job Role:
-                          </span>
-                          <span>Software Developer</span></p>
-                        <p>
-                          <!-- <span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> <p> -->
-                          <span class="title-s">Address:
-                          </span>
-                          <span>Panipat, Haryana</span></p>
-                      </div>
-                    </div>
-                  </div>
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top"><i class="fas fa-chevron-up"></i></button>
 
-                  <div class="skill-mf">
-                    <p class="title-s">Skills</p>
-                    <span>Java</span>
-                    <!-- <span class="pull-right">85%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Vinay Kumar. Built with passion.</p>
+    </div>
+  </footer>
 
-                    <span>SQL</span>
-                    <!-- <span class="pull-right">95%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+  <script src="js/main.js"></script>
+</body>
 
-                    <span>PYTHON</span>
-                    <!-- <span class="pull-right">85%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>PHP</span>
-                    <!-- <span class="pull-right">99%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>Javascript</span>
-                    <!-- <span class="pull-right">99%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>C++</span>
-                    <!-- <span class="pull-right">99%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
-
-                  <h1 class="big">About</h1>
-                  <h2 class="mb-4">About Me</h2>
-
-                  <p>Intend to build a career with leading corporate of hi-tech environment with
-                    committed & dedicated people, which will help me to explore myself fully and
-                    realize my potential. An Individual Strong in design and integration with intuitive
-                    problem-solving skills. Proficient in C++, C, SQL. Ability to translate business
-                    requirements into technical solutions. Looking to start the career as an entrylevel with a reputed firm driven by technology.</p>
-                  <ul class="about-info mt-4 px-md-0 px-2">
-                    <li class="d-flex">
-                      <span>Profile:</span>
-                      <span>Backend Developer </span></li>
-                    <li class="d-flex">
-                      <span>Domain:</span>
-                      <span>Software Developement</span></li>
-                    <li class="d-flex">
-                      <span>Education:</span>
-                      <span>Master of Computer Applications</span></li>
-                    <li class="d-flex">
-                      <span>Language:</span>
-                      <span>English, Hindi</span></li>
-                    <!-- <li class="d-flex"> <span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
-                    <li class="d-flex">
-                      <span>Other Skills:</span>
-                      <span>
-                        Drawing proficiency, Observational skills, Creativity, Technical proficiency, Communication skills, Time management, Adaptability &amp; Attention to detail</span></li>
-                    <li class="d-flex">
-                      <span>Interest:</span>
-                      <span>Traveling, Travel Photography, Teaching</span></li>
-
-                  </ul>
-                </div>
-              </div>
-
-              <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                <div class="text">
-                  <!-- <p class="mb-4"> <span class="number" data-number="30">0</span> <span>+</span> <span>&nbsp; Projects completed</span> </p> -->
-                  <p>
-                    <a href="https://www.linkedin.com/in/vnaykumr00/" class="btn btn-primary py-3 px-3">LinkedIn</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Experienced Adobe ColdFusion Developer at Arosys Technologies, proficient in PHP and skilled in jQuery AJAX. Specialized in crafting visually appealing webpages using HTML, CSS, Tailwind, Bootstrap, and Material UI. Possesses a strong foundation in Python, C++, C, and Java, with expertise in SQL. Eager to apply expertise to drive innovative web development projects forward.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <h1 class="big-4">Experience</h1>
-          <div class="underline"></div>
-        </div>
-        <br>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">FEB 2022-June 2022</span>
-              <h2>FullStack Intern</h2>
-              <span class="position">Book4u</span>
-              <p class="mt-4">Book4u , a young age startup, specializes in offering a unified platform for books and courses, harnessing technology to facilitate seamless learning experiences.
-                <ul>
-                  <li>Built business logic for website with the help of backend technologies using PHP.</li>
-                  <li>Fixing bugs with respect to business logic in old code bases and added functionalities to existing applications.</li>
-                  <!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
-                </ul>
-              </p>
-            </div>
-
-          </div>
-
-          <!-- <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2021-Present</span>
-              <h2>Freelancer Sketch Artist</h2>
-              <span class="position">ig/anurag.sketches</span>
-              <p class="mt-4">Freelance artist specializing in paid graphite and charcoal portraits. Self-taught and experienced in creating custom artwork. Find my portfolio on Instagram - @anurag.sketches
-                <ul>
-                  <li>Researching market trends to meet client demands.</li>
-                  <li>Offering personalized art workshops for aspiring artists.</li>
-                  <li>Collaborating with galleries to showcase my work.</li>
-
-                </ul>
-              </p>
-            </div>
-
-          </div> -->
-        </div>
-
-        <br>
-        <br>
-
-        <div class="row">
-          <h1 class="big-4">Education</h1>
-          <div class="underline"></div>
-        </div>
-        <br>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2022-2024</span>
-              <h2>Master of Computer Applications</h2>
-              <span class="position">Chandigarh University</span>
-              <p class="mt-4">Grade: First class distinction.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2019-2022</span>
-              <h2>Bachelor of Computer Applications</h2>
-              <span class="position">Kuruksherta University</span>
-              <p class="mt-4">Grade: First class distinction.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center ftco-animate">
-            <p>
-              <a href="https://drive.google.com/file/d/1T_i9ueEjvd60slWUQ47qu1SBBqVA5dMQ/view" class="btn btn-primary py-4 px-5">Download CV</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="ftco-section" id="project-section"> <div class="container"> <div class="row justify-content-center mb-5 pb-5"> <div class="col-md-7 heading-section text-center ftco-animate"> <h1 class="big big-2">Projects</h1> <h2 class="mb-4">Projects</h2> <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> </div> </div> <div class="row d-flex"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a> </h3> <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a> </h3> <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a> </h3> <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p> </div> </div> </div> </div> <br> <div class="row d-flex justify-content-center"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a> </h3> <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a> </h3> <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p> </div> </div> </div> </div> </div> </section> -->
-
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="hid" style="visibility:hidden">
-        <div class="container">
-          <div class="row d-md-flex align-items-center">
-            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="20">0</strong>
-                  <span>Projects</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="200">0</strong>
-                  <span>DSA Problems</span>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-        <!-- <div class="container"> -->
-        <div class="row justify-content-center">
-          <div class="col-md-7 ftco-animate text-center">
-            <h2>Here's my<span>
-                <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
-              </span>
-            </h2>
-            <div class="heading">
-              <h4>
-                I love to code &amp; create awesome projects.
-              </h4>
-              <br>
-            </div>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-    </section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-map-signs"></span>
-              </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Panipat, Haryana</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-phone2"></span>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p>
-                <a href="tel://8397876777">+91 8397876777</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email Address</h3>
-              <p>
-                <a href="mailto:vnay.kumr.00@gmail.com">vnay.kumr.00@gmail.com</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-globe"></span>
-              </div>
-              <h3 class="mb-4">Download Resume</h3>
-              <p>
-                <a href="https://drive.google.com/file/d/1T_i9ueEjvd60slWUQ47qu1SBBqVA5dMQ/view">resumelink</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="container">
-            <br>
-            <br>
-            <div class="row justify-content-center">
-              <div class="col-md-7 ftco-animate text-center">
-                <h2>Have a<span>
-                    Question?
-                  </span>
-                </h2>
-                <div class="que" id="send-message">
-                  <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="6e71dfa1-6bf9-44a3-95bb-212e2d07bda8">
-                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                      <div class="col-12">
-                        <label for="fullname" class="form-label">Full Name
-                          <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <label for="email" class="form-label">Email
-                          <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
-                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                            </svg>
-                          </span>
-                          <input type="email" class="form-control" id="email" name="email" value="" required="required">
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
-                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                            </svg>
-                          </span>
-                          <input type="tel" class="form-control" id="phone" name="phone" value="">
-                        </div>
-                      </div><br>
-                      <div class="col-12">
-                        <label for="subject" class="form-label">Subject
-                          <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
-                      </div>
-                      <div class="col-12">
-                        <label for="message" class="form-label">Message
-                          <span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
-                      </div>
-                      <div class="col-12">
-                        <div class="d-grid"><br>
-                          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <br>
-            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-              <li class="ftco-animate normal-txt">Find me on
-              </li>
-              <!-- <li class="ftco-animate"> <a href="https://www.youtube.com/@RishabhMishraOfficial"> <span class="icon-youtube"></span></a> </li> -->
-              <li class="ftco-animate">
-                <a href="https://www.linkedin.com/in/vnaykumr00/">
-                  <span class="icon-linkedin"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="https://twitter.com/vnay__kumar">
-                  <span class="icon-twitter"></span></a>
-              </li>
-              <!-- <li class="ftco-animate"> <a href="https://twitter.com/rishabhnmishra"> <span class="icon-facebook"></span></a> </li> -->
-              <li class="ftco-animate">
-                <a href="https://www.instagram.com/mr_vnay/">
-                  <span class="icon-instagram"></span></a>
-              </li>
-            </ul>
-            <br>
-          </div>
-        </div>
-      </section>
-
-      <footer class="ftco-footer ftco-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-
-              <p style="display: none;">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved | This template is made with
-                <i class="icon-heart color-danger" aria-hidden="true"></i>
-                by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <!-- loader -->
-      <div id="ftco-loader" class="show fullscreen">
-        <svg class="circular" width="48px" height="48px">
-          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
-      </div>
-
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery-migrate-3.0.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/jquery.animateNumber.min.js"></script>
-      <script src="js/scrollax.min.js"></script>
-
-      <script src="js/main.js"></script>
-      <script>
-        function gitClick() {
-          window.location.href = 'https://github.com/vnaykumr00';
-        }
-      </script>
-
-    </body>
-
-  </html>
+</html>
